@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de aspirantes</title>
+</head>
+<body>
+    <div> 
+        <h1>cadastro de aspirantes</h1>
+        <p>Preencha corretamente com suas informações</p>
+        <br>
+    </div>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <fieldset>
+   <div>
+       <label for="nome">Nome:</label>
+       <input type="text" id="nome" name="nome" >
+   </div>
+   <div>
+       <label for="sobrenome">Sobrenome:</label>
+       <input type="text" name="sobrenome" id="sobrenome">
+   </div>
+</fieldset>
+
+<div>
+   <label for="email">Email</label>
+   <input type="email" name="email" id="email">
+</div>
+<div>
+    <label>Sexo:</label>
+    <label>
+        <input type="radio" name="sexo" value="male"/> Masculino
+    </label>
+    <label>
+        <input type="radio" name="sexo" value="female"/> Feminino
+    </label>
+</div>
+<div>
+<label>Estado onde mora atualmente:</label>
+<select id="estado">
+    <option selected disabled value="">Selecione</option>
+<option>Acre</option>
+<option>Alagoas</option>
+<option>Amapá</option>
+<option>Amazonas</option>
+<option>Bahia</option>
+<option>Ceará</option>
+<option>Distrito federal</option>
+<option>Espírito Santo</option>
+<option>Goiás</option>
+<option>Maranhão</option>
+<option>Mato Grosso</option>
+<option>Mato Grosso do Sul</option>
+<option>Minas Gerais</option>
+<option>Pará</option>
+<option>Paraíba</option>
+<option>Paraná</option>
+<option>Pernambuco</option>
+<option>Piauí</option>
+<option>Rio de Janeiro</option>
+<option>Rio grande do Norte</option>
+<option>Rio grande do Sul</option>
+<option>Rondônia</option>
+<option>Roraima</option>
+<option>Santa Catarina</option>
+<option>São Paulo</option>
+<option>Sergipe</option>
+<option>Tocantins</option>
+</select>
+</div>
+
+<fieldset>
+    <div>
+        <label>Qual área de desenvolvimento você mais se indentifica?</label><br>
+        <input type="checkbox" id="front" name="front" value="front">
+        <label for="front">Front-End</label>
+        <input type="checkbox" id="back" name="back" value="back">
+        <label for="back">Back-End</label>
+        <input type="checkbox" id="full" name="full" value="full">
+        <label for="full">Full-Stack</label>
+    </div>
+</fieldset>
+
+<div>
+    <br>
+    <label>Porque você escolheu o AlphaEdTech?</label><br>
+    <textarea rows="12" id="escolha" name="escolha"></textarea>
+</div>
+<button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
